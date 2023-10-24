@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+/* 
+  1. Select day, turn it bold (default will be Monday)
+  2. Create a state for each day's tomatoes
+  3. Increment / decrement should work based on which day is selected
+*/
+
+const days = ["M", "T", "W", "Th", "F", "Sat", "Sun"]
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="window">
+        <h2>🍅 Daily Tomato App 🍅</h2>
+        {days.map((day) => (
+          <div key={day} className="tomato-box">
+            <h3>{day}</h3>
+            <div className="tomato-day-box"></div>
+          </div>
+        ))}
+        <div className="buttons-container">
+          <div className="button">-</div>
+          <div className="button">+</div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
