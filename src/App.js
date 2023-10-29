@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+
 /* 
   1. Select day, turn it bold (default will be Monday)
   2. Create a state for each day's tomatoes
