@@ -12,6 +12,18 @@ const days = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
 export default function App() {
 
   const [selectedDay, setSelectedDay] = useState("Mon");
+  const [allTomatoes, setAllTomatoes] = useState([]);
+
+  function addTomato () {
+    const newAllTomatoes = {...allTomatoes};
+    const currentDayTomatoes = newAllTomatoes[selectedDay];
+    if (newAllTomatoes[selectedDay]) {
+      newAllTomatoes[selectedDay] = currentDayTomatoes + '🍅'
+    } else {
+      newAllTomatoes[selectedDay] = '🍅'
+    }
+     setAllTomatoes(newAllTomatoes)
+  }
 
   const handleDayClick = (day) => {
     setSelectedDay(day);
@@ -28,12 +40,19 @@ export default function App() {
           onClick={() => handleDayClick(day)}
           >
             <h3 >{day}</h3>
-            <div className="tomato-day-box"></div>
+            <div className="tomato-day-box">
+              {allTomatoes[day]}
+            </div>
           </div>
         ))}
         <div className="buttons-container">
           <div  className="button">-</div>
-          <div className="button">+</div>
+          <div 
+          className="button"
+          onClick={(addTomato)}
+          >
+          +
+          </div>
         </div>
       </div>
     </div>
