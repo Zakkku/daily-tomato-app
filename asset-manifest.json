@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Zakkku/daily-tomato-app/static/css/main.b3d1c7e7.css",
+    "main.js": "/Zakkku/daily-tomato-app/static/js/main.356e5d98.js",
+    "static/js/787.861eb059.chunk.js": "/Zakkku/daily-tomato-app/static/js/787.861eb059.chunk.js",
+    "static/media/tomato-background.jpeg": "/Zakkku/daily-tomato-app/static/media/tomato-background.0120f4c8c1bbd82cb147.jpeg",
+    "index.html": "/Zakkku/daily-tomato-app/index.html",
+    "main.b3d1c7e7.css.map": "/Zakkku/daily-tomato-app/static/css/main.b3d1c7e7.css.map",
+    "main.356e5d98.js.map": "/Zakkku/daily-tomato-app/static/js/main.356e5d98.js.map",
+    "787.861eb059.chunk.js.map": "/Zakkku/daily-tomato-app/static/js/787.861eb059.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3d1c7e7.css",
+    "static/js/main.356e5d98.js"
+  ]
+}
