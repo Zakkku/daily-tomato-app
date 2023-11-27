@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Zakkku/daily-tomato-app",
   "name": "daily-tomato-app",
   "version": "0.1.0",
   "private": true,
@@ -9,13 +10,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://github.com/Zakkku/daily-tomato-app"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
-   "start": "react-scripts start",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
