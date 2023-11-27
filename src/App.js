@@ -14,6 +14,15 @@ export default function App() {
   const [selectedDay, setSelectedDay] = useState("Mon");
   const [allTomatoes, setAllTomatoes] = useState([]);
 
+  function removeTomato () {
+    const newAllTomatoes = {...allTomatoes};
+    const currentDayTomatoes = newAllTomatoes[selectedDay];
+    if (currentDayTomatoes) {
+     newAllTomatoes[selectedDay] = currentDayTomatoes.slice(0, -2)
+    } 
+      setAllTomatoes(newAllTomatoes)
+  }
+
   function addTomato () {
     const newAllTomatoes = {...allTomatoes};
     const currentDayTomatoes = newAllTomatoes[selectedDay];
@@ -46,7 +55,10 @@ export default function App() {
           </div>
         ))}
         <div className="buttons-container">
-          <div  className="button">-</div>
+          <div  
+          className="button"
+          onClick={(removeTomato)}
+          >-</div>
           <div 
           className="button"
           onClick={(addTomato)}

@@ -34,6 +34,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 5px 0;
+  font-size: 14px;
 }
 
 .tomato-box > h3 {
@@ -45,10 +46,14 @@
   border-radius: 5%;
   width: 80%;
   height: 60px;
-  justify-content: center;
+  justify-content: flex-start;
   border: 1px solid grey;
   flex-wrap: wrap;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  
 }
 
 .buttons-container {
